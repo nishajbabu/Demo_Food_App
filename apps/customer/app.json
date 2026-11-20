@@ -28,6 +28,17 @@
       "expo-status-bar",
       "expo-secure-store",
       "expo-notifications"
-    ]
+    ],
+    "extra": {
+      "router": {
+        "asyncRoutes": {
+          "web": true
+        }
+      },
+      "eas": {
+        "projectId": "15f1d8ac-0318-42ee-83be-f17b40c8aad5"
+      }
+    },
+    "owner": "nishajbabu"
   }
 }
