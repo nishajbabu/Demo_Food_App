@@ -1,0 +1,137 @@
+// English, Tamil and Hindi words for the app.
+import { createContext, useContext } from 'react';
+
+export const STRINGS = {
+  en: {
+    hello: 'Namaste',
+    whatToday: 'What do you need today?',
+    search: 'Search atta, samosa, milk…',
+    food: 'Food',
+    foodSub: 'Dhabas, sweets & snacks near you',
+    grocery: 'Daily Needs',
+    grocerySub: 'Atta, dal, oil · in about 2 hours',
+    milk: 'Milk & Sabzi',
+    milkSub: 'Daily milk, curd, veg baskets',
+    ride: 'Ride',
+    rideSub: 'Auto, share auto, e-rickshaw, cab',
+    soon: 'Coming soon',
+    orders: 'My orders',
+    subscriptions: 'My subscriptions',
+    help: 'Help',
+    profile: 'My details',
+    cart: 'Cart',
+    add: 'ADD',
+    placeOrder: 'Place order',
+    cod: 'Cash on delivery',
+    upi: 'Pay by UPI',
+    deliverTo: 'Deliver to',
+    total: 'Total',
+    delivery: 'Delivery',
+    free: 'Free',
+    items: 'Items',
+    cancel: 'Cancel',
+    logout: 'Log out',
+    language: 'Language',
+    yourOtp: 'Give this code to the rider at the door',
+    callRider: 'Call rider',
+    closed: 'Closed now',
+    tomorrow: 'Your delivery tomorrow',
+    newSubscription: 'Start a new subscription',
+    skipHint: 'Tap a day to skip it',
+    noHome: 'No smartphone at home? Order on WhatsApp or call',
+  },
+  ta: {
+    hello: 'வணக்கம்',
+    whatToday: 'இன்று உங்களுக்கு என்ன வேண்டும்?',
+    search: 'அரிசி, பால், சமோசா தேடுங்கள்…',
+    food: 'உணவு',
+    foodSub: 'அருகிலுள்ள உணவகங்கள், இனிப்பு, சிற்றுண்டி',
+    grocery: 'மளிகை',
+    grocerySub: 'அரிசி, பருப்பு, எண்ணெய் · சுமார் 2 மணி நேரத்தில்',
+    milk: 'பால் & காய்கறி',
+    milkSub: 'தினசரி பால், தயிர், காய்கறி கூடை',
+    ride: 'சவாரி',
+    rideSub: 'ஆட்டோ, ஷேர் ஆட்டோ, இ-ரிக்ஷா, கார்',
+    soon: 'விரைவில் வருகிறது',
+    orders: 'என் ஆர்டர்கள்',
+    subscriptions: 'என் சந்தாக்கள்',
+    help: 'உதவி',
+    profile: 'என் விவரம்',
+    cart: 'கூடை',
+    add: 'சேர்',
+    placeOrder: 'ஆர்டர் செய்',
+    cod: 'நேரடி பணம் (COD)',
+    upi: 'UPI மூலம் செலுத்து',
+    deliverTo: 'டெலிவரி முகவரி',
+    total: 'மொத்தம்',
+    delivery: 'டெலிவரி',
+    free: 'இலவசம்',
+    items: 'பொருட்கள்',
+    cancel: 'ரத்து செய்',
+    logout: 'வெளியேறு',
+    language: 'மொழி',
+    yourOtp: 'டெலிவரி நபரிடம் இந்தக் குறியீட்டைச் சொல்லவும்',
+    callRider: 'ரைடரை அழைக்கவும்',
+    closed: 'இப்போது மூடியுள்ளது',
+    tomorrow: 'நாளைய டெலிவரி',
+    newSubscription: 'புதிய சந்தா தொடங்குங்கள்',
+    skipHint: 'விடுமுறைக்கு நாளைத் தட்டவும்',
+    noHome: 'ஸ்மார்ட்போன் இல்லையா? WhatsApp அல்லது போனில் ஆர்டர் செய்யுங்கள்',
+  },
+  hi: {
+    hello: 'नमस्ते',
+    whatToday: 'आज क्या चाहिए?',
+    search: 'आटा, समोसा, दूध खोजें…',
+    food: 'खाना',
+    foodSub: 'पास के ढाबे, मिठाई और नाश्ता',
+    grocery: 'राशन',
+    grocerySub: 'आटा, दाल, तेल · लगभग 2 घंटे में',
+    milk: 'दूध और सब्ज़ी',
+    milkSub: 'रोज़ दूध, दही, सब्ज़ी की टोकरी',
+    ride: 'सवारी',
+    rideSub: 'ऑटो, शेयर ऑटो, ई-रिक्शा, कैब',
+    soon: 'जल्द आ रहा है',
+    orders: 'मेरे ऑर्डर',
+    subscriptions: 'मेरे सब्सक्रिप्शन',
+    help: 'मदद',
+    profile: 'मेरी जानकारी',
+    cart: 'कार्ट',
+    add: 'जोड़ें',
+    placeOrder: 'ऑर्डर करें',
+    cod: 'घर पर नकद भुगतान',
+    upi: 'UPI से भुगतान',
+    deliverTo: 'यहाँ पहुँचाएँ',
+    total: 'कुल',
+    delivery: 'डिलीवरी',
+    free: 'मुफ़्त',
+    items: 'सामान',
+    cancel: 'रद्द करें',
+    logout: 'लॉग आउट',
+    language: 'भाषा',
+    yourOtp: 'यह कोड डिलीवरी वाले को दरवाज़े पर बताएँ',
+    callRider: 'राइडर को कॉल करें',
+    closed: 'अभी बंद है',
+    tomorrow: 'कल की डिलीवरी',
+    newSubscription: 'नया सब्सक्रिप्शन शुरू करें',
+    skipHint: 'छुट्टी के लिए दिन पर टैप करें',
+    noHome: 'स्मार्टफ़ोन नहीं? WhatsApp या फ़ोन से ऑर्डर करें',
+  },
+};
+
+export const LangContext = createContext({ lang: 'en', setLang: () => {} });
+
+export function useT() {
+  const { lang } = useContext(LangContext);
+  const dict = STRINGS[lang] || STRINGS.en;
+  return (key) => dict[key] ?? STRINGS.en[key] ?? key;
+}
+
+// Use the Tamil or Hindi product name when that language is selected.
+export function useName() {
+  const { lang } = useContext(LangContext);
+  return (item) => {
+    if (lang === 'ta' && item?.nameTa) return item.nameTa;
+    if (lang === 'hi' && item?.nameHi) return item.nameHi;
+    return item?.name;
+  };
+}

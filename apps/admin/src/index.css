@@ -1,0 +1,74 @@
+:root {
+  --green: #0e7a45;
+  --green-dark: #0a5c34;
+  --green-deep: #0b3d25;
+  --green-tint: #e7f4ec;
+  --marigold: #f5a623;
+  --marigold-tint: #fef3de;
+  --brown: #7a4500;
+  --red: #8a1c12;
+  --red-tint: #fdecea;
+  --blue: #174c91;
+  --blue-tint: #e6f0fb;
+  --ink: #1b1f1c;
+  --muted: #5b625d;
+  --line: #e3e8e4;
+  --bg: #f4f5f2;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+a { color: var(--green); }
+button, input, select, textarea { font: inherit; }
+
+.layout { display: flex; flex-wrap: wrap; min-height: 100vh; }
+.side { flex: 1 1 220px; max-width: 100%; background: var(--green-deep); color: #fff; padding: 20px 12px; display: flex; flex-direction: column; gap: 4px; }
+.side .brand { font-size: 22px; font-weight: 800; padding: 0 10px 14px; }
+.side button { display: flex; justify-content: space-between; align-items: center; min-height: 44px; padding: 0 12px; border: 0; border-radius: 10px; background: none; color: #e2efe6; font-weight: 600; text-align: left; cursor: pointer; }
+.side button.on { background: var(--green); color: #fff; }
+.side .badge { background: var(--marigold); color: var(--ink); border-radius: 9px; padding: 0 8px; font-size: 12px; font-weight: 800; }
+.side .who { margin-top: auto; padding: 10px; font-size: 13px; color: #c9d1cc; }
+main { flex: 999 1 560px; min-width: 0; padding: 24px; display: flex; flex-direction: column; gap: 18px; }
+
+h1 { margin: 0; font-size: 28px; }
+h2 { margin: 0 0 8px; font-size: 19px; }
+.muted { color: var(--muted); font-size: 14px; }
+.row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
+.card { background: #fff; border-radius: 16px; padding: 16px; display: flex; flex-direction: column; gap: 8px; }
+.kpi .value { font-size: 30px; font-weight: 800; }
+.cols { display: flex; flex-wrap: wrap; gap: 16px; align-items: flex-start; }
+.cols > .wide { flex: 999 1 520px; min-width: 0; }
+.cols > .narrow { flex: 1 1 300px; min-width: 0; }
+
+.btn { min-height: 40px; padding: 0 14px; border-radius: 10px; border: 1.5px solid var(--green); background: var(--green); color: #fff; font-weight: 700; cursor: pointer; }
+.btn.outline { background: #fff; color: var(--green); }
+.btn.danger { background: #fff; color: var(--red); border-color: var(--red); }
+.btn:disabled { opacity: 0.5; cursor: default; }
+.pill { min-height: 36px; padding: 0 12px; border-radius: 18px; border: 1.5px solid #d9e3dc; background: #fff; font-weight: 700; cursor: pointer; }
+.pill.on { background: var(--green); color: #fff; border-color: var(--green); }
+
+.table { width: 100%; overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; min-width: 760px; }
+th { text-align: left; color: var(--muted); font-size: 13px; padding: 8px 10px; }
+td { padding: 10px; border-top: 1px solid #eef1ee; vertical-align: top; }
+tr.click { cursor: pointer; }
+tr.click:hover { background: #f7f8f6; }
+
+.tag { display: inline-block; padding: 2px 9px; border-radius: 9px; font-size: 12px; font-weight: 800; white-space: nowrap; }
+.tag.green { background: var(--green-tint); color: var(--green-dark); }
+.tag.amber { background: var(--marigold-tint); color: var(--brown); }
+.tag.red { background: var(--red-tint); color: var(--red); }
+.tag.blue { background: var(--blue-tint); color: var(--blue); }
+.tag.grey { background: #eef1ee; color: #3f4642; }
+
+label { font-size: 14px; font-weight: 700; display: flex; flex-direction: column; gap: 6px; }
+input, select, textarea { min-height: 42px; padding: 8px 12px; border-radius: 10px; border: 1.5px solid #b8bfba; background: #fff; color: var(--ink); }
+.error { background: var(--red-tint); color: var(--red); padding: 10px 12px; border-radius: 10px; font-weight: 600; }
+.msg { padding: 10px 12px; border-radius: 12px; background: #fff; max-width: 80%; }
+.msg.staff { background: var(--green-tint); align-self: flex-end; }
+.login { max-width: 380px; margin: 10vh auto; }
+
+.card > .tag { align-self: flex-start; }
