@@ -3,7 +3,7 @@
     "preview": {
       "distribution": "internal",
       "android": { "buildType": "apk" },
-      "env": { "EXPO_PUBLIC_API_URL": "https://REPLACE-WITH-YOUR-STAGING-SERVER" }
+      "env": { "EXPO_PUBLIC_API_URL": "https://demo-food-app-k0pf.onrender.com" }
     },
     "production": {
       "autoIncrement": true,
